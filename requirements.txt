@@ -1,0 +1,15 @@
+1. You need to comments this lines in etc/ImageMagick-6/policy.xml or etc/ImageMagick/policy.xml
+<policy domain="coder" rights="none" pattern="PS" />
+<policy domain="coder" rights="none" pattern="PS2" />
+<policy domain="coder" rights="none" pattern="PS3" />
+<policy domain="coder" rights="none" pattern="EPS" />
+<policy domain="coder" rights="none" pattern="PDF" />
+<policy domain="coder" rights="none" pattern="XPS" />
+
+You need to do this because of security of presentations.
+
+3. If you don't have unoconv let's install it:
+sudo apt install unoconv
+
+2. Run program:
+bash convert.sh
